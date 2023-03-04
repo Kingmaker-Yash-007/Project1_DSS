@@ -48,7 +48,8 @@ public class ProjectApplicationTests {
     public static void setup() {
         executorService = Executors.newFixedThreadPool(NUM_THREADS);
         restTemplate = new RestTemplate();
-        liftRideEventEndpoint = "http://localhost:" + 8080 + "/v1/skiers/liftRideEvent";
+        //liftRideEventEndpoint = "http://localhost:" + 8080 + "/v1/skiers/liftRideEvent";
+        liftRideEventEndpoint = "http://155.248.230.90" + 8080 + "/v1/skiers/liftRideEvent";
     }
 
     @AfterAll
